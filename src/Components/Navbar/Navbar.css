@@ -1,0 +1,81 @@
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.navbar {
+	color: #fff;
+	background-color: var(--secondary-color);
+	display: flex;
+	padding: 20px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar_right .navbar_options {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	/* justify-content: space-between;
+	 */
+	gap: 2rem;
+}
+
+.navbar_right .navbar_options > .navbar_option {
+	display: flex;
+	align-items: center;
+	margin-right: 15px;
+}
+
+.navbar_right .navbar_options > .navbar_option > .MuiSvgIcon-root {
+	margin-right: 5px;
+}
+
+.navbar_option.active {
+	color: var(--text-color);
+}
+
+.menu,
+.close {
+	display: none !important;
+	cursor: pointer;
+}
+
+@media (max-width: 800px) {
+	.menu {
+		display: block !important;
+	}
+
+	.navbar_right {
+		z-index: 10;
+		position: fixed;
+		top: 0;
+		right: -100%;
+		width: 100%;
+		background-color: var(--secondary-color);
+		transition: 0.2s ease-out;
+	}
+
+	.navbar_options {
+		flex-direction: column;
+		visibility: hidden;
+	}
+
+	.navbar_right.active {
+		right: 0 !important;
+	}
+
+	.navbar_right.active .navbar_options {
+		padding: 50px 0;
+		height: 100vh;
+		justify-content: space-evenly;
+		visibility: visible;
+	}
+
+	.navbar_right.active .navbar_options .close {
+		display: block !important;
+		position: absolute;
+		top: 30px;
+		right: 20px;
+	}
+}

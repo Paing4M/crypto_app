@@ -1,0 +1,107 @@
+.exchanges {
+	padding: 20px;
+}
+
+.exchanges_header {
+	display: flex;
+	width: 100%;
+	gap: 2rem;
+	padding: 0 10px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* .exchanges_header > h4 {
+	flex: 1;
+} */
+
+.exchanges_lists {
+	margin-top: 10px;
+	border: 2px solid gray;
+}
+
+.exchanges_list {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	font-size: 0.8rem;
+	color: lightgray;
+	border-bottom: 1px solid gray;
+	padding: 10px;
+}
+
+.exchanges_list:last-child {
+	border: none !important;
+}
+
+.row_head {
+	flex: 0.45;
+}
+
+.row {
+	flex: 0.15;
+}
+
+.row,
+.row_head {
+	display: flex;
+	align-items: center;
+}
+
+.row_head > .MuiAvatar-root {
+	margin: 0 10px;
+}
+
+@media (max-width: 500px) {
+	.exchanges_header {
+		gap: 10px;
+	}
+
+	.exchanges_header > h4 {
+		font-size: 10px;
+	}
+
+	.exchanges_list {
+		font-size: 0.6rem;
+		gap: 0.5rem;
+	}
+
+	.row_head {
+		/* background-color: red; */
+		max-width: 150px;
+	}
+
+	.row_headName {
+		font-size: 9px;
+		text-overflow: clip;
+	}
+
+	.row_head > .MuiAvatar-root {
+		margin: 0 3px;
+		width: 22px !important;
+		height: 22px !important;
+	}
+}
+
+@media (max-width: 290px) {
+	.exchanges_header {
+		gap: 5px;
+	}
+
+	.exchanges_header > h4 {
+		font-size: 8px;
+	}
+
+	.exchanges_list {
+		font-size: 0.3rem;
+		gap: 5px;
+	}
+
+	.row_head > .MuiAvatar-root {
+		margin: 0 2px;
+		width: 18px !important;
+		height: 18px !important;
+	}
+}

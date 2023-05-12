@@ -1,0 +1,104 @@
+.coinDetails {
+	padding: 20px;
+}
+
+.coinDetails_head {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
+	/* height: 30px; */
+}
+
+.coinDetails_head > .MuiAvatar-root {
+	width: 60px !important;
+	height: 60px !important;
+}
+
+.coinDetails_head > h2 {
+	color: #fff;
+	text-align: center;
+	margin-left: 30px;
+}
+
+.statTitle {
+	color: lightgray;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.statSubTitle {
+	font-size: 14px;
+	margin-bottom: 30px;
+	color: gray;
+}
+
+.coinDetails_stats {
+	display: flex;
+	width: 100%;
+	gap: 4rem;
+	justify-content: space-between;
+}
+
+.conDetails_statLeft,
+.coinDetails_statRight {
+	flex: 0.4;
+}
+
+.coinDetails_about {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.coinDetails_text,
+.coinDetails_links {
+	flex: 0.4;
+}
+
+.coinDetails_text > h3 {
+	color: lightgray;
+	font-size: 1.6rem;
+	margin-bottom: 5px;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #333;
+}
+
+.coinDetails_text > p {
+	font-size: 0.9rem;
+	margin-bottom: 40px;
+	color: gray;
+	letter-spacing: 1px;
+}
+
+.coinDetails_links > h2 {
+	color: lightgray;
+	margin-bottom: 20px;
+}
+
+.links {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	border-bottom: 2px solid #333;
+	padding-bottom: 10px;
+}
+
+.links > h4 {
+	text-transform: capitalize;
+	color: #bcbcbc;
+}
+
+.links > a {
+	text-decoration: none;
+	color: #6b6bf1;
+}
+
+@media (max-width: 800px) {
+	.coinDetails_stats,
+	.coinDetails_about {
+		flex-direction: column;
+	}
+}

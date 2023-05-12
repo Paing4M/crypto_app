@@ -1,0 +1,121 @@
+.newCard {
+	background-color: #021d36;
+	box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 8px 0px;
+	width: 100%;
+	max-width: 400px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.newCard_head {
+	display: flex;
+	gap: 1rem;
+}
+
+.newCard_head > h2 {
+	font-size: 18px;
+	flex: 1;
+	color: #fafafa;
+}
+
+.newCard_head > img {
+	width: 60px;
+	height: 60px;
+	object-fit: contain;
+}
+
+.newCard > a {
+	cursor: pointer;
+	margin: 10px 0;
+	font-size: 14px;
+	color: gray;
+	text-decoration: none;
+}
+
+.newCard > a > span {
+	color: #7676cf;
+	font-size: 12px;
+}
+
+.newCard_foot {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.newCard_foot > .left {
+	display: flex;
+	align-items: center;
+}
+
+.newCard_foot > .left > span {
+	font-size: 14px;
+	margin-left: 5px;
+	color: lightgray;
+}
+
+.newCard_foot > .right > span {
+	font-size: 14px;
+	color: lightgray;
+}
+
+@media (max-width: 500px) {
+	.newCard_head > h2 {
+		font-size: 16px;
+	}
+
+	.newCard_head > img {
+		width: 50px;
+		height: 50px;
+	}
+
+	..newCard > a {
+		font-size: 12px;
+	}
+
+	.newCard > a > span {
+		font-size: 10px;
+	}
+
+	.newCard_foot > .left > span {
+		font-size: 12px;
+	}
+
+	.newCard_foot > .right > span {
+		font-size: 12px;
+	}
+
+	.left .MuiAvatar-root {
+		width: 30px !important;
+		height: 30px !important
+    ;
+	}
+}
+
+@media (max-width: 290px) {
+	.newCard_head > h2 {
+		font-size: 14px;
+	}
+
+	.newCard_head > img {
+		width: 45px;
+		height: 45px;
+	}
+
+	..newCard > a {
+		font-size: 11px;
+	}
+
+	.newCard > a > span {
+		font-size: 8px;
+	}
+
+	.newCard_foot > .left > span {
+		font-size: 11px;
+	}
+
+	.newCard_foot > .right > span {
+		font-size: 11px;
+	}
+}

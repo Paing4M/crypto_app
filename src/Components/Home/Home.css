@@ -1,0 +1,80 @@
+.home {
+	padding: 20px;
+}
+
+.home_title {
+	margin-bottom: 20px;
+}
+
+.home_box {
+	width: 40%;
+	display: flex;
+	gap: 2rem;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	border-bottom: 1px solid var(--secondary-color);
+}
+
+.homeBox_left > div > p,
+.homeBox_right > div > p {
+	font-size: 14px;
+	color: gray;
+	margin-bottom: 5px;
+}
+
+.homeBox_left > div,
+.homeBox_right > div {
+	margin-bottom: 20px;
+}
+
+.homeBox_left > div > strong,
+.homeBox_right > div > strong {
+	color: lightgray;
+}
+
+.home_cards {
+	display: flex;
+	gap: 1.5rem;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.home_cardTitle {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.home_cardTitle h1 {
+	font-size: 24px;
+}
+
+.home_cardTitle a {
+	color: #2a2ad4;
+	font-size: 18px;
+}
+
+@media (max-width: 800px) {
+	.home_box {
+		width: 100%;
+	}
+
+	.home_cardTitle h1 {
+		font-size: 18px;
+	}
+
+	.home_cardTitle a {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 460px) {
+	.home_cardTitle h1 {
+		font-size: 16px;
+	}
+
+	.home_cardTitle a {
+		font-size: 12px;
+	}
+}
