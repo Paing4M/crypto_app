@@ -6,6 +6,31 @@
 	align-items: center;
 	flex-direction: column;
 }
+
+.search {
+	margin-top: 1rem;
+	width: 100%;
+	max-width: 500px;
+	background-color: #021d36;
+	box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 8px 0px;
+	overflow: hidden;
+	border-radius: 0.5rem;
+}
+
+.search > input {
+	width: 100%;
+	background: inherit;
+	color: #fff;
+	padding: 10px 15px;
+	font-size: 1rem;
+	border: none;
+	outline: none;
+}
+
+.search > input::placeholder {
+	color: #fff;
+}
+
 .cryptocurrencies > h2 {
 	margin: 10px 0 5px 0;
 }

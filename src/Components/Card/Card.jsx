@@ -11,6 +11,7 @@ const Card = ({ coin }) => {
 				<h4
 					style={{
 						fontSize: '18px',
+						flex: '1',
 						fontWeight: '800',
 						color: `${coin.color}`,
 					}}

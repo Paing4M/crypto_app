@@ -29,29 +29,29 @@ const Home = () => {
 				<div className='homeBox_left'>
 					<div>
 						<p>Total Cryptocurrencies</p>
-						<strong>{millify(globalStats.totalCoins)}</strong>
+						<strong>{millify(globalStats?.totalCoins) || ''}</strong>
 					</div>
 
 					<div>
 						<p>Total Market Cap</p>
-						<strong>{millify(globalStats.totalMarketCap)}</strong>
+						<strong>{millify(globalStats?.totalMarketCap) || ''}</strong>
 					</div>
 
 					<div>
 						<p>Total Markets</p>
-						<strong>{millify(globalStats.totalMarkets)}</strong>
+						<strong>{millify(globalStats?.totalMarkets) || ''}</strong>
 					</div>
 				</div>
 
 				<div className='homeBox_right'>
 					<div>
 						<p>Total Exchanges</p>
-						<strong>{millify(globalStats.totalExchanges)}</strong>
+						<strong>{millify(globalStats?.totalExchanges) || ''}</strong>
 					</div>
 
 					<div>
 						<p>Total 24h Volume</p>
-						<strong>{millify(globalStats.total24hVolume)}</strong>
+						<strong>{millify(globalStats?.total24hVolume) || ''}</strong>
 					</div>
 				</div>
 			</div>

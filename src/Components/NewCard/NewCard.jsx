@@ -7,13 +7,14 @@ const NewCard = ({ item }) => {
 	return (
 		<div className='newCard'>
 			<div className='newCard_head'>
-				<h2>{item?.name}</h2>
-				<img src={item?.image.thumbnail.contentUrl} alt='' />
+				<h2>{item?.title}</h2>
+				<img src={item?.thumbnail} alt='' />
 			</div>
 			<a href={item?.url} target='_blank'>
 				{item?.description.slice(0, 300)} <span>read more...</span>
 			</a>
 			<div className='newCard_foot'>
+				{/* 
 				<div className='left'>
 					{item?.provider[0].image?.thumbnail?.contentUrl && (
 						<Avatar
@@ -21,9 +22,9 @@ const NewCard = ({ item }) => {
 						/>
 					)}
 					<span>{item.provider[0].name}</span>
-				</div>
+				</div> */}
 				<div className='right'>
-					<span>{moment(item.datePublished).startOf('ss').fromNow()}</span>
+					<span>{moment(item.createdAt).startOf('ss').fromNow()}</span>
 				</div>
 			</div>
 		</div>

@@ -10,20 +10,19 @@ const News = () => {
 	useEffect(() => {
 		const options = {
 			headers: {
-				'X-BingApis-SDK': 'true',
 				'X-RapidAPI-Key':
-					'66b0bae770msh7ca6db2c6eb3347p112087jsn44604e8500db',
-				'X-RapidAPI-Host': 'bing-news-search1.p.rapidapi.com',
+					'1c73a0124fmshe90ddb2f267c486p176cb4jsn7703478cd314',
+				'X-RapidAPI-Host': 'cryptocurrency-news2.p.rapidapi.com',
 			},
 		}
 
 		const fetchNews = async () => {
 			await axios
 				.get(
-					'https://bing-news-search1.p.rapidapi.com/news/search?q=cryptocurrency&freshness=Day&textFormat=Raw&safeSearch=Off',
+					'https://cryptocurrency-news2.p.rapidapi.com/v1/coindesk',
 					options
 				)
-				.then((data) => setNews(data.data.value))
+				.then((data) => setNews(data.data.data))
 				.then((err) => console.log(err))
 		}
 
