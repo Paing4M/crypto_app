@@ -11,6 +11,10 @@ import CloseIcon from '@mui/icons-material/Close'
 const Navbar = () => {
 	const [active, setActive] = useState(false)
 
+	const handleClick = () => {
+		setActive(false)
+	}
+
 	return (
 		<div className='navbar'>
 			<Link to={'/'} className='navbar_left'>
@@ -18,20 +22,42 @@ const Navbar = () => {
 			</Link>
 			<div className={active ? 'active navbar_right' : 'navbar_right'}>
 				<div className='navbar_options'>
-					<NavLink className='navbar_option' end to={'/'}>
+					<NavLink
+						onClick={handleClick}
+						className='navbar_option'
+						end
+						to={'/'}
+					>
 						<HomeIcon /> Home
 					</NavLink>
 
-					<NavLink className='navbar_option' end to={'/cryptocurrencies'}>
+					<NavLink
+						onClick={handleClick}
+						className='navbar_option'
+						end
+						to={'/cryptocurrencies'}
+					>
 						<AttachMoneyIcon /> Cryptocurrencies
 					</NavLink>
 
-					<NavLink className='navbar_option' end to={'/exchanges'}>
+					{/*
+	<NavLink
+						onClick={handleClick}
+						className='navbar_option'
+						end
+						to={'/exchanges'}
+					>
 						<CurrencyExchangeIcon />
 						Exchanges
 					</NavLink>
+*/}
 
-					<NavLink className='navbar_option' end to={'news'}>
+					<NavLink
+						onClick={handleClick}
+						className='navbar_option'
+						end
+						to={'news'}
+					>
 						<LightbulbIcon />
 						News
 					</NavLink>
